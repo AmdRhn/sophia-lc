@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./shared.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans JP:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Serif:wght@500&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['IBM Plex Serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <!-- <header class="w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 px-4 py-4 sticky top-0 z-50">
+  <div class="max-w-[1280px] mx-auto flex items-center justify-between">
+    
+    <div class="flex items-center gap-3 cursor-pointer group">
+      
+        <img src="assets/logo.png" alt="Logo" class="w-full h-[73px] object-contain">
+     
+      
+     
+    </div>
+
+    <nav class="hidden lg:flex items-center ">
+      <ul class="flex items-center text-[#4A4A4A] text-[14px] font-[500] gap-4">
+        <li class="nav-item">
+          <a href="#" class="nav-link">当院について</a>
+          
+        </li>
+        <nav-separator aria-hidden="true"></nav-separator>
+        <li class="nav-item">
+          <a href="#" class="nav-link">不妊外来</a>
+        </li>
+          <nav-separator aria-hidden="true"></nav-separator>
+        <li class="nav-item">
+          <a href="#" class="nav-link">婦人科外来</a>
+        </li>
+          <nav-separator aria-hidden="true"></nav-separator>
+        <li class="nav-item">
+          <a href="#" class="nav-link">治療費</a>
+        </li>
+          <nav-separator aria-hidden="true"></nav-separator>
+        <li class="nav-item">
+          <a href="#" class="nav-link">よくある質問</a>
+        </li>
+          <nav-separator aria-hidden="true"></nav-separator>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">アクセス</a>
+        </li>
+      </ul>
+
+      <div class="translate-toggle group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="translate-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8" />
+        </svg>
+        <span class="translate-label">翻訳</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="translate-caret" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </nav>
+
+    <div class="lg:hidden">
+        <button class="text-[#D98B74]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+
+  </div>
+</header> -->
+
+
+  <!-- Hero-Section -->
+
+  <section class="h-screen relative">
+    <img src="assets/hero.jpg" alt="" class="w-full object-cover h-full " style="object-position: 80%;">
+    <div class="absolute inset-0 bg-[#A1935933]"></div>
+    <div
+      class="absolute inset-0 flex lg:flex-row flex-col  items-center  justify-center gap-20 lg:gap-0 xl:gap-[120px] px-4">
+      <div class="flex flex-col items-center  justify-center gap-5 px-4">
+
+        <h1 class="font-bold text-[20px] md:text-[36px] text-center ">キャリアも、日常も、<br class="md:hidden">
+          あきらめない。</h1>
+        <p class="text-[17px] md:text-[30px] text-center font-[500]">羽根のように軽やかに<br>
+          いちばん通いやすく、<br>
+          分かりやすい <br class="md:hidden">
+          クリニックへ。</p>
+
+        <img src="assets/hero-bubble.png" class=" hidden lg:block w-[227px] md:w-[410px]" alt="">
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <div
+          class="bg-[#D9D2A7]/80 rounded-full size-[100px] md:size-[200px]  flex flex-col items-center justify-center">
+          <span class="text-[12.5px] md:text-[28px]">
+            当院の妊娠率
+          </span>
+          <h2 class="text-[35px] md:text-[70px] leading-[24px] lg:leading-[50px] font-serif font-[500]">
+            55.<span class="text-[17px] md:text-[50px]">1%</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] flex  items-center justify-center  px-4 py-2 gap-6">
+            当日予約 <br>
+            予約外も
+            <span class="text-[22px] md:text-[45px]">OK</span>
+          </div>
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] flex  items-center justify-center  px-4 py-2 gap-6">
+            土日祝診療
+
+          </div>
+
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] flex flex-col  items-center justify-center max-h-[64px] md:max-h-[106px] md:leading-[32px] px-4 py-2 ">
+            <span class="text-[11px] md:text-[20px] text-left w-full">あらゆる</span>
+            婦人科トラブル
+            <span class="text-[11px] md:text-[20px] text-right w-full">に対応</span>
+          </div>
+
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] md:leading-[42px] flex flex-col  items-center justify-center max-h-[64px] md:max-h-[106px]  px-4 py-2 ">
+            お子様連れ
+            <span class="text-[22px] md:text-[45px]">OK</span>
+          </div>
+        </div>
+
+        <img src="assets/hero-bubble.png" class="  lg:hidden w-[227px] md:w-[410px]" alt="">
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="py-10 lg:py-20 lg:bg-[#FDFAF2]">
+    <div class="flex justify-center">
+      <h2 class=" yellow-title text-[17px] md:text-[28px] font-[500] text-center ">Webなら <br class="md:hidden">
+        24時間予約受付・当日予約OK</h2>
+    </div>
+    <div class="w-full max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-24 mt-12 md:mt-16 px-4">
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">赤坂院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">淵野辺院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">橋本院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-10 md:py-20 bg-[#FDFAF2]">
+    <h2 class="text-[17.5px] md:text-[30px] font-[500] text-center relative w-fit mx-auto ">
+      <img src="assets/feather.png"
+        class="absolute w-[48px] md:w-[120px] top-[-36px] md:top-[-86px] left-[-50px] md:left-[-81px]" alt="">
+      軽やかで、包み込む羽根のように <br>
+      あなたの人生の、<br class="md:hidden">
+      最高のチームでありたい。
+    </h2>
+
+    <p class="text-center font-[500] text-[12px] md:text-[18px] mt-12 md:mt-16 relative w-fit mx-auto ">
+      「仕事と両立できるだろうか」<br>
+      「周りと比べて焦ってしまう」<br>
+      「何から始めたらいいのか、実はよく分からない」<br>
+      「上の子を連れて、二人目の相談に行ってもいいのかな」 <br><br>
+
+      そんな不安を抱えたまま、<br class="md:hidden">
+      ひとりで頑張りすぎてはいませんか？<br><br>
+
+      私たちは、25年にわたり <br class="md:hidden">
+      多くの新しい命の誕生を見守ってきました。 <br>
+      だからこそ、 <br class="md:hidden">
+      あなたが今感じているその不安も、 <br>
+      言葉にできない焦りも、<br>
+      私たちは真摯に受け止めたいと考えています。<br><br>
+
+      お子様連れの通院も、どうぞ気兼ねなく。<br>
+      二人目妊活に励むあなたも、 <br class="md:hidden">
+      安心して治療に専念できるよう、<br>
+      私たちは環境を整えてお待ちしています。<br><br>
+
+      <span class="font-bold text-[16px] md:text-[22px]">知識“０”で大丈夫です。</span><br><br>
+
+      まずは、 <br class="md:hidden">
+      あなたの今の気持ちを、そのまま聞かせてください。
+      <img src="assets/feather.png"
+        class="absolute w-[56px] md:w-[200px] bottom-[-36px] md:bottom-[-90px] right-[-31px] md:right-[-156px]" alt="">
+
+    </p>
+
+  </section>
+
+  <!-- Media Section -->
+  <section class="py-10 md:py-20 px-4 md:px-0">
+    <h2 class="font-bold text-[24px] md:text-[48px] text-center font-serif ">MEDIA</h2>
+
+    <div
+      class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 md:gap-10 mt-12 md:mt-16">
+      <!-- 1 -->
+      <div class="w-fit mx-auto">
+        <img src="assets/media1.png" class="w-[228px] xl:w-[unset]" alt="">
+        <p class="text-[15px] font-[400] tracking-[10%]">森三中・大島さんと長谷川統 <br>
+          括院長の対談記事</p>
+      </div>
+
+      <!-- 2-->
+      <div class="w-fit mx-auto">
+        <img src="assets/media2.png" class="w-[228px] xl:w-[unset]" alt="">
+        <p class="text-[15px] font-[400] tracking-[10%]">「ザ！世界仰天ニュース（日本 <br>
+          テレビ）」長谷川統括院長が <br>
+          出演</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="w-fit mx-auto">
+        <img src="assets/media3.png" class="w-[228px] xl:w-[unset]" alt="">
+        <p class="text-[15px] font-[400] tracking-[10%]">「病院まちねっと」長谷川統 <br>
+          括院長インタビュー</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="w-fit mx-auto">
+        <img src="assets/media4.png" class="w-[228px] xl:w-[unset]" alt="">
+        <p class="text-[15px] font-[400] tracking-[10%]">「ドクターズ・ファイル」長谷 <br>
+          川統括院長インタビュー</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="w-fit mx-auto">
+        <img src="assets/media5.png" class="w-[228px] xl:w-[unset]" alt="">
+        <p class="text-[15px] font-[400] tracking-[10%]">「メディカルノート」長谷川統 <br>
+          括院長の紹介ページ</p>
+      </div>
+
+    </div>
+
+    <!-- slider -->
+    <div
+      class="swiper media-swiper border-[#D9D9D9] border-t-[24px] border-b-[24px] border-r-[12px] border-l-[12px] mt-16 w-full max-w-[947px] mx-auto ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/slider1.png" alt="スライダー画像1" class="w-full block" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/slider1.png" alt="スライダー画像2" class="w-full block" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/slider1.png" alt="スライダー画像3" class="w-full block" />
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- POLICY Section -->
+  <section class=" py-10 md:py-20 relative"> 
+    <img src="assets/policy-1.png" class="absolute w-[30%] hidden lg:block top-[-100px]" alt="">
+    <img src="assets/policy2.png" class="absolute w-[35%] hidden lg:block bottom-[-300px] right-[0px]" alt="">
+
+    <h2 class="font-bold text-[24px] md:text-[48px] text-center font-serif ">POLICY</h2>
+    <h3 class="font-[600] text-[18px] md:text-[45px] text-center font-serif text-[#BB9809] mt-10 md:mt-16">until every
+      woman smiles</h3>
+    <p class="font-[400] text-[12px] md:text-[28px] text-center mt-2">
+      すべての女性が、笑顔になるまで。<br>
+      最新の技術と、変わらない寄り添いを。
+    </p>
+
+    <div class="flex gap-10 md:gap-16 items-center justify-center mt-12 md:mt-16 px-4 flex-col md:flex-row">
+      <img src="assets/policy.png" alt="" class="w-[250px] md:w-[320px]">
+      <p class="text-[10px] text-center md:text-left md:text-[18px] font-[400]">
+        初めての場所で戸惑うのは、当たり前のこと。 <br>
+        「聞き直してもいいのかな？」と遠慮する必要はありません。 <br><br>
+
+        私たちは、あなたの歩幅や気持ちのタイミングに寄り添い、 <br class="md:hidden">
+        何度でも丁寧に<br class="hidden md:block">お伝えすることを大切にしています。<br class="md:hidden">
+        医師、看護師、培養士から受付まで。<br>
+        全員が、あなたの笑顔のために集まった <br class="md:hidden">
+        「プロのチーム」です。<br><br>
+
+        なぜその治療が必要なのか、25年の実績に基づき <br class="md:hidden">
+        誠実にお答えします。 <br>
+        すべては、あなたが最高の笑顔で <br class="md:hidden">
+        この場所を卒業する日のために。
+      </p>
+    </div>
+  </section>
+
+  <!-- Reason Section -->
+  <section class=" py-10 md:py-20">
+    <h2 class="font-bold  text-[24px] md:text-[48px] text-center font-serif ">REASON</h2>
+    <p class="font-[400] text-[12px] md:text-[24px] text-center mt-6 md:mt-2">不妊治療に真摯に向き合い続けて、25年 <br>
+      私たちは、数多くの新しい命の誕生を <br class="md:hidden">
+      共に見守ってきました</p>
+
+    <div class=" mt-12 md:mt-24 flex flex-col gap-12 md:gap-[120px] items-center justify-center">
+
+      <!-- 01 -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-7 md:gap-20">
+        <div class="relative image-container w-fit">
+          <img src="assets/reason1.png" alt="" class="w-[194px] md:w-[450px]">
+          <span
+            class="absolute top-[-36px] md:top-[-85px] right-[-20px] md:right-[-50px] font-[600] font-serif opacity-70 text-[40px] md:text-[100px]">01</span>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-[14px] text-center md:text-left md:text-[26px] mb-6 md:mb-12">婦人科トラブル、不妊治療<br>
+            卵子凍結も、この一箇所で完結<br>
+            「いま診てほしい」に応えます</h3>
+
+          <p class="text-[10px] md:text-[20px] font-[400] max-w-[250px] md:max-w-[unset]">生理痛や月経不順、おりものの違和感、PMS、そして
+            更年期のゆらぎ <br class="hidden md:block">
+            まで。日々のパフォーマンスを左右する小さなお悩みも、私たちはす <br class="hidden md:block">
+            べて大切に診察いたします。思春期から更年期まで幅広い年代のお悩 <br class="hidden md:block">
+            みに対応しています。</p>
+        </div>
+
+      </div>
+
+      <!-- 02 -->
+
+      <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-7 md:gap-20">
+        <div class="relative image-container w-fit">
+          <img src="assets/reason2.png" alt="" class="w-[194px] md:w-[450px]">
+          <span
+            class="absolute top-[-36px] md:top-[-85px] left-[-20px] md:left-[-50px] font-[600] font-serif opacity-70 text-[40px] md:text-[100px]">02</span>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-[14px] text-center md:text-left md:text-[26px] mb-6 md:mb-12">予約優先でスムーズに <br>
+            当日・夜間・土日祝も診察可能</h3>
+
+          <p class="text-[10px] md:text-[20px] font-[400] max-w-[250px] md:max-w-[unset]">
+            不妊治療が、あなたの仕事や大切な日常を縛るものであってはならな <br class="hidden md:block">
+            いと私たちは考えます。 急な予定の合間の当日予約や、お仕事帰りの <br class="hidden md:block">
+            夜間診療、そして土日祝日の診察も可能です。 <br class="hidden md:block">
+            さらに予約優先制を導入し、お待たせしないスムーズな診療を心がけ <br class="hidden md:block">
+            ることで、 あなたのかけがえのない時間を守ります。</p>
+        </div>
+
+      </div>
+
+      <!-- 03 -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-7 md:gap-20">
+        <div class="relative image-container w-fit">
+          <img src="assets/reason3.png" alt="" class="w-[194px] md:w-[450px]">
+          <span
+            class="absolute top-[-36px] md:top-[-85px] right-[-20px] md:right-[-50px] font-[600] font-serif opacity-70 text-[40px] md:text-[100px]">03</span>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-[14px] text-center md:text-left md:text-[26px] mb-6 md:mb-12">四半世紀の信頼と、<br>
+            未来をひらく最先端の技術</h3>
+
+          <p class="text-[10px] md:text-[20px] font-[400] max-w-[250px] md:max-w-[unset]">
+            お気軽な妊活相談から、タイミング療法、人工授精も対応しておりま <br class="hidden md:block">
+            す。体外受精では胚へのストレスを最小限に抑える「タイムラプス・ <br class="hidden md:block">
+            インキュベーター」をはじめ、世界水準の高度生殖医療設備を完備。 <br class="hidden md:block">
+            長年培った経験値に、データに基づいた最新テクノロジーを融合させ <br class="hidden md:block">
+            ることで、確かな成果と信頼できる治療を実現しています。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Rates Section -->
+  <section class=" py-10 md:py-20 bg-[#FDFAF2]">
+    <h2 class="font-bold  text-[24px] md:text-[48px] text-center font-serif ">Success Rates</h2>
+    <p class="font-[400] text-[10px] md:text-[20px] text-center mt-8">患者様一人一人に最適なオーダーメイド治療を提案し、 <br class="md:hidden">
+      最短で高い妊娠率を実現します。</p>
+
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-10 mt-10 md:mt-16 px-4 max-w-[1280px] mx-auto">
+      <img src="assets/success1.png" alt="" class="md:w-[54%]">
+      <img src="assets/success2.png" alt="" class="md:w-[46%]">
+
+    </div>
+  </section>
+
+  <!-- helping section -->
+  <section class="py-10 md:py-20 md:bg-[#FDFAF2]">
+    <h2 class="text-[20px] md:text-[30px] font-[500] text-center mb-6 md:mb-10 ">一人で悩まず、<br>
+      まずは相談してみませんか？</h2>
+    <div class="flex justify-center">
+      <h2 class=" yellow-title text-[17px] md:text-[28px] font-[500] text-center ">Webなら <br class="md:hidden">
+        24時間予約受付・当日予約OK</h2>
+    </div>
+
+    <div class="w-full max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-24 mt-12 md:mt-16 px-4">
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">赤坂院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">淵野辺院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">橋本院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Steps Section  -->
+  <section class="py-20">
+    <h2 class="font-bold text-[24px] md:text-[48px] text-center font-serif ">FIRST STEP</h2>
+    <p class="text-center text-[12px] md:text-[24px] ">はじめて不妊治療を考える方へ</p>
+
+    <div class="max-w-[1180px] mx-auto mt-16 flex flex-col gap-12 md:gap-[100px] px-4">
+      <!-- 01- -->
+      <div>
+        <div class="bg-[#E1DBB9B2] top-container w-full p-3 md:p-4 ">
+          <span class="font-[400] text-[10px] md:text-[24px] text-center block">①　Web予約</span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-[100px] mt-4 md:mt-8">
+          <img src="assets/step1.png" alt="" class="w-[200px] md:w-[400px] lg:w-[550px]">
+          <p class="font-[400] text-[10px] md:text-[16px]">
+            お仕事の合間に、スマホからいつでも予約・変更が可能で <br class="md:hidden">
+            す。 <br>
+            「予約優先制」を導入し、あなたの貴重な時間を守るための <br class="md:hidden">
+            スムー <br class="hidden md:block">
+            ズな診療を徹底しています。 <br>
+            急な予定変更や当日の受診も、柔軟に対応いたします。<br>
+            事前の予約がなくても、あなたのタイミングで安心してお越 <br class="md:hidden">
+            しください。<br>
+          </p>
+        </div>
+      </div>
+
+      <!-- 02- -->
+      <div>
+        <div class="bg-[#E1DBB9B2] top-container w-full p-3 md:p-4 ">
+          <span class="font-[400] text-[10px] md:text-[24px] text-center block">②　初診時の持ち物</span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-[100px] mt-4 md:mt-8">
+          <img src="assets/step2.png" alt="" class="w-[200px] md:w-[400px] lg:w-[550px]">
+          <p class="font-[400] text-[10px] md:text-[16px]">・マイナンバーカード（資格確認証） <br><br>
+
+            以下、お持ちの方のみ <br>
+            ・お薬手帳 <br>
+            ・他院の検査結果用紙 <br>
+            ・紹介状 <br>
+          </p>
+        </div>
+      </div>
+      <!-- 03- -->
+      <div>
+        <div class="bg-[#E1DBB9B2] top-container w-full p-3 md:p-4 ">
+          <span class="font-[400] text-[10px] md:text-[24px] text-center block">③　医師による診察と検査</span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-[100px] mt-4 md:mt-8">
+          <img src="assets/step3.png" alt="" class="w-[200px] md:w-[400px] lg:w-[550px]">
+          <p class="font-[400] text-[10px] md:text-[16px]">
+            現在のお悩みやご希望をじっくり伺いま <br class="hidden md:block">
+            す。<br>
+            専門用語を使わず、今の状態を分かりやすくお伝えします。<br>
+            患者様のご希望に沿いながら、どの治療法があうか、方針 <br>
+            を一緒に決めます。<br>
+          </p>
+        </div>
+      </div>
+
+      <!-- 04- -->
+      <div>
+        <div class="bg-[#E1DBB9B2] top-container w-full p-3 md:p-4 ">
+          <span class="font-[400] text-[10px] md:text-[24px] text-center block">④　看護師によるカウンセリング</span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-[100px] mt-4 md:mt-8">
+          <img src="assets/step4.png" alt="" class="w-[200px] md:w-[400px] lg:w-[550px]">
+          <p class="font-[400] text-[10px] md:text-[16px]">
+            その方の治療法に合わせたスケジュール、次回の持ち物、<br>
+            必要書類の用意の仕方を説明します。医師に聞きにくいこ<br>
+            とや悩みも、ここで解消できます。
+          </p>
+        </div>
+      </div>
+
+      <!-- 05- -->
+      <div>
+        <div class="bg-[#E1DBB9B2] top-container w-full p-3 md:p-4 ">
+          <span class="font-[400] text-[10px] md:text-[24px] text-center block">⑤　お会計</span>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-[100px] mt-4 md:mt-8">
+          <img src="assets/step5.png" alt="" class="w-[200px] md:w-[400px] lg:w-[550px]">
+          <p class="font-[400] text-[10px] md:text-[16px]">
+            現金またはクレジットカードをご利用いただけます。<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fees Section -->
+  <section class="bg-[#FDFAF2] py-10 md:py-20">
+    <h2 class="font-bold text-[24px] md:text-[48px] text-center font-serif ">FEES</h2>
+    <p class="text-center text-[12px] md:text-[24px] ">費用</p>
+    <p class="font-[500] text-[12px] md:text-[28px] text-center mt-10 md:mt-16 leading-[14px] md:leading-[33px]">
+      不妊外来初診時の費用の目安 <br>
+      <span class="text-[9px] md:text-[18px] font-[400]">
+        婦人科外来：初診料860円＋検査・薬代
+      </span>
+    </p>
+
+    <div class="flex flex-col lg:flex-row w-full max-w-[250px]  md:max-w-[1180px] mx-auto gap-6 md:gap-12 mt-12">
+
+      <div
+        class="bg-[#E1DBB9B2] w-full md:w-fit mx-auto rounded-[12px] md:rounded-[30px] px-6 md:px-8 py-2 md:py-4 flex flex-col items-center justify-center w-fit">
+        <span class="font-bold text-center block text-[22px] md:text-[48px]">女性</span>
+        <p class="font-[600] font-serif text-[28px] md:text-[67px] text-[#F7B837] leading-[42px]">
+          <span class="text-[19px] md:text-[42px] text-[#483B2C]">￥</span>3,000<span
+            class="text-[14px] md:text-[30px] text-[#483B2C]">〜</span>5,500
+
+        </p>
+        <p class="font-serif text-[9px] md:text-[14px] md:mt-2 ">初診料+検査費用（保険適用）<br>
+          (生理周期により金額が変動します）</p>
+      </div>
+      <div
+        class="bg-[#E1DBB9B2] w-full md:w-fit mx-auto rounded-[12px] md:rounded-[30px] px-2 md:px-4 py-2 md:py-4 flex flex-col items-center justify-center w-fit">
+        <span class="font-bold text-center block text-[22px] md:text-[48px]">男性</span>
+        <p class="font-[600] font-serif text-[27px] md:text-[67px] text-[#F7B837] leading-[42px]">
+          <span class="text-[19px] md:text-[42px] text-[#483B2C]">￥</span>10,000<span
+            class="text-[14px] md:text-[30px] text-[#483B2C]">〜</span>13,000
+
+        </p>
+        <p class="font-serif text-[9px] md:text-[14px] md:mt-2 ">初診料3,500円+検査費用（自費）</p>
+      </div>
+
+
+    </div>
+
+    <p class="font-[500] text-[11px] md:text-[28px] text-center my-8 leading-[33px]">不妊治療費用の目安</p>
+
+    <div
+      class="w-full max-w-[1180px] mx-auto mt-10 md:mt-20 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 ">
+      <!-- 1 -->
+      <div class="relative bg-[#E1DBB9B2] w-full py-8 px-6 w-fit rounded-[13px] md:rounded-[30px]">
+        <div
+          class="bg-[#A19359] rounded-full flex items-center justify-center w-[46px] md:w-[80px] h-[46px] md:h-[80px] absolute top-[-20px] md:top-[-40px]  right-[0] md:right-[-5px]">
+          <span class="text-[11px] md:text-[20px] font-bold text-white ">保険適用</span>
+        </div>
+
+        <p class="text-center text-[14px] md:text-[24px] font-[700] mb-6 md:mb-10 mt-2">タイミング法</p>
+        <p class="text-[14px] md:text-[24px] font-[400]">1周期当たり</p>
+
+        <p class="text-[#F7B837] font-serif font-semibold text-[32px] md:text-[64px] leading-[42px] md:leading-[60px]">
+          5<span class="text-[15px] md:text-[25px] text-[#483B2C]">千円～</span>1<span
+            class="text-[15px] md:text-[25px] text-[#483B2C]">万円</span>
+        </p>
+        <p class="font-[400] text-[9px] md:text-[16px] mt-2  ">お薬代や超音波検査などの基本的な費用を含めた概算。まずはここから始めたい方に。</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="relative bg-[#E1DBB9B2] w-full py-8 px-6 w-fit rounded-[13px] md:rounded-[30px]">
+        <div
+          class="bg-[#A19359] rounded-full flex items-center justify-center w-[46px] md:w-[80px] h-[46px] md:h-[80px] absolute top-[-20px] md:top-[-40px]  right-[0] md:right-[-5px]">
+          <span class="text-[11px] md:text-[20px] font-bold text-white ">保険適用</span>
+        </div>
+
+        <p class="text-center text-[14px] md:text-[24px] font-[700] mb-6 md:mb-10 mt-2">人工授精</p>
+        <p class="text-[14px] md:text-[24px] font-[400]">1周期当たり</p>
+
+        <p class="text-[#F7B837] font-serif font-semibold text-[32px] md:text-[64px] leading-[42px] md:leading-[60px]">
+          1<span class="text-[15px] md:text-[25px] text-[#483B2C]">～</span>2<span
+            class="text-[15px] md:text-[25px] text-[#483B2C]">万円</span>
+        </p>
+        <p class="font-[400] text-[9px] md:text-[16px] mt-2  ">処置料を含めた概算。お身体への負担も少なく、通院しながらの治療が可能です。</p>
+      </div>
+
+      <!-- 3 -->
+
+      <div class="relative bg-[#E1DBB9B2] w-full py-8 px-6 w-fit rounded-[13px] md:rounded-[30px]">
+        <div
+          class="bg-[#A19359] rounded-full flex items-center justify-center w-[46px] md:w-[80px] h-[46px] md:h-[80px] absolute top-[-20px] md:top-[-40px]  right-[0] md:right-[-5px]">
+          <span class="text-[11px] md:text-[20px] font-bold text-white ">保険適用</span>
+        </div>
+
+        <p class="text-center text-[14px] md:text-[24px] font-[700] mb-6 md:mb-10 mt-2">体外受精</p>
+        <p class="text-[14px] md:text-[24px] font-[400]">1ヶ月あたり</p>
+
+        <p class="text-[#F7B837] font-serif font-semibold text-[32px] md:text-[64px] leading-[42px] md:leading-[60px]">
+          6<span class="text-[15px] md:text-[25px] text-[#483B2C]">～</span>10<span
+            class="text-[15px] md:text-[25px] text-[#483B2C]">万円</span>
+        </p>
+        <p class="font-[400] text-[9px] md:text-[16px] mt-2  ">総額は約20〜40万円ですが、制度利用により月々の支払いは上記程度に抑えられます。※
+          <br>
+          <span class="text-[7px] md:text-[13px]">※保険適用・高額療養費制度を利用した場合の自己負担額</span>
+        </p>
+      </div>
+
+      <!-- 4 -->
+      <div class="relative bg-[#E1DBB9B2] w-full py-8 px-6 w-fit rounded-[13px] md:rounded-[30px]">
+        <!-- <div class="bg-[#A19359] rounded-full flex items-center justify-center w-[46px] md:w-[80px] h-[46px] md:h-[80px] absolute top-[-20px] md:top-[-40px]  right-[0] md:right-[-5px]">
+              <span class="text-[11px] md:text-[20px] font-bold text-white ">保険適用</span>
+            </div> -->
+
+        <p class="text-center text-[14px] md:text-[24px] font-[700] mb-6 md:mb-10 mt-2">卵子凍結プラン</p>
+        <p class="text-[14px] md:text-[24px] font-[400]">1回あたり</p>
+
+        <p class="text-[#F7B837] font-serif font-semibold text-[32px] md:text-[64px] leading-[42px] md:leading-[60px]">
+          24<span class="text-[15px] md:text-[25px] text-[#483B2C]"></span><span
+            class="text-[15px] md:text-[25px] text-[#483B2C]">万円～</span>
+        </p>
+        <p class="font-[400] text-[9px] md:text-[16px] mt-2  ">赤坂院では東京都（最大26万円）と港区（10万円）の補助金が出ます
+          <br><br>
+          <span class="text-[7px] md:text-[13px] mt-2">※助成金には要件があります。</span>
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-center">
+
+      <p class="yellow-title2  text-[15px] md:text-[28px] font-[700] text-[#F7B837] text-center mt-10">すべての方が対象となります</p>
+
+    </div>
+    <button
+      class="button-grad text-[15px] leading-[17px] md:leading-none md:text-[36px] py-4 px-10 font-bold rounded-[80px] w-fit md:w-full max-w-[912px] mt-2 justify-center items-center flex gap-2  mx-auto ">
+      高額療養費制度 <br class="md:hidden"> ・ <br class="md:hidden"> 助成金をチェック！
+      <svg width="30" height="40" viewBox="0 0 35 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 21L5.5 39.1865V2.81347L22 21Z" fill="#483B2C" />
+        <path d="M35 21L18.5 39.1865V2.81347L35 21Z" fill="#483B2C" />
+      </svg>
+
+    </button>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="bg-white py-10 md:py-20 flex items-center justify-center ">
+    <div class="flex flex-col lg:flex-row items-center w-full max-w-[912px] mx-auto gap-10 lg:gap-[200px] px-8">
+
+      <div>
+        <h2 class="font-bold text-[24px] md:text-[48px] text-center font-serif ">Blog</h2>
+        <p class="text-center text-[12px] md:text-[24px] ">ブログ</p>
+      </div>
+
+      <div>
+        <div class="pb-4 pt-2 px-4 border-t border-b border-[#483B2C]">
+          <span class="font-serif text-[10px] md:text-[14px] font-[400]">2026.01.28</span><span
+            class=" ml-6 font-[400] text-white text-[10px] md:text-[14px] bg-[#A19359] rounded-[20px] px-1.5 py-0.5">不妊治療</span>
+          <p class="text-[10px] md:text-[16px] font-[400] mt-2 ">不妊治療の保険適用を徹底解説！対象範囲・回数制限・メリット/デメリットまで</p>
+        </div>
+
+        <div class="pb-4 pt-2 px-4 border-[#483B2C]">
+          <span class="font-serif text-[10px] md:text-[14px] font-[400]">2026.01.29</span><span
+            class=" ml-6 font-[400] text-white text-[10px] md:text-[14px] bg-[#A19359] rounded-[20px] px-1.5 py-0.5">婦人科疾患</span>
+          <p class="text-[10px] md:text-[16px] font-[400] mt-2 ">子宮頸がんワクチンと妊活の関係｜接種時期と妊娠への影響を解説</p>
+        </div>
+
+        <div class="pb-4 pt-2 px-4 border-t border-b border-[#483B2C]">
+          <span class="font-serif text-[10px] md:text-[14px] font-[400]">2026.01.29</span><span
+            class=" ml-6 font-[400] text-white text-[10px] md:text-[14px] bg-[#A19359] rounded-[20px] px-1.5 py-0.5">婦人科疾患</span>
+          <p class="text-[10px] md:text-[16px] font-[400] mt-2 ">ピル服用中でも子宮頸がんワクチン接種はできる？併用時の注意点・リスクを解説</p>
+        </div>
+
+        <div class="pb-4 pt-2 px-4 lg:border-b border-[#483B2C]">
+          <span class="font-serif text-[10px] md:text-[14px] font-[400]">2026.01.29</span><span
+            class=" ml-6 font-[400] text-white text-[10px] md:text-[14px] bg-[#A19359] rounded-[20px] px-1.5 py-0.5">婦人科疾患</span>
+          <p class="text-[10px] md:text-[16px] font-[400] mt-2 ">ピル服用中でも子宮頸がんワクチン接種はできる？併用時の注意点・リスクを解説</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Clinic Section -->
+  <section class=" bg-[#FDFAF2] py-10 md:py-20">
+    <h2 class="font-bold text-[24px] md:text-[48px] text-center font-serif ">OUR CLINICS</h2>
+    <p class="text-center text-[12px] md:text-[24px] ">各院紹介</p>
+
+    <div
+      class="w-full max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-4 mt-12 md:mt-16 px-4">
+
+      <div
+        class="bg-white shadow-[3px_4px_4px_0px_#00000040] border-[#A19359] border-[3px] rounded-[6px] md:rounded-[10px] py-7 px-6 w-fit mx-auto">
+        <h2 class="font-[400] text-[16px] md:text-[24px] text-center ">長谷川レディースクリニック <br>
+          赤坂</h2>
+        <img src="assets/button-bg.jpg" class="w-[137px] md:w-[230px] mx-auto mt-4" alt="">
+        <p class="text-[10px] md:text-[13px] font-[400] mt-4 md:pl-4">〒107-0052 <br>
+          東京都港区赤坂2丁目14-32  <br>
+          赤坂2・14プラザビル 6階</p>
+        <div class="flex flex-col  w-fit mx-auto items-center gap-4 md:gap-6 mt-6 md:mt-8">
+
+          <button
+            class="text-[9px] md:text-[16px] shadow-[2.08px_4.16px_4.16px_0px_#00000040] rounded-[40px] button-grad px-4 py-2 md:py-3  mx-auto">
+            クリニックを詳しく見る
+          </button>
+          <button
+            class="text-[12px] md:text-[18px] shadow-[2.08px_4.16px_4.16px_0px_#00000040] rounded-[40px] button-grad px-4 py-3 md:py-4 w-full mx-auto">
+            Web予約はこちら
+          </button>
+        </div>
+
+      </div>
+
+      <div
+        class="bg-white shadow-[3px_4px_4px_0px_#00000040] border-[#A19359] border-[3px] rounded-[6px] md:rounded-[10px] py-7 px-6 w-fit mx-auto">
+        <h2 class="font-[400] text-[16px] md:text-[24px] text-center ">ソフィアレディスクリニック
+          <br>（淵野辺院）
+        </h2>
+        <img src="assets/button-bg.jpg" class="w-[137px] md:w-[230px] mx-auto mt-4" alt="">
+        <p class="text-[10px] md:text-[13px] font-[400] mt-4 md:pl-4">〒252-0233  <br>
+          神奈川県相模原市中央区鹿沼台2丁目12-2 サン <br>
+          ライズアートビル 2F</p>
+        <div class="flex flex-col  w-fit mx-auto items-center gap-4 md:gap-6 mt-6 md:mt-8">
+
+          <button
+            class="text-[9px] md:text-[16px] shadow-[2.08px_4.16px_4.16px_0px_#00000040] rounded-[40px] button-grad px-4 py-2 md:py-3  mx-auto">
+            クリニックを詳しく見る
+          </button>
+          <button
+            class="text-[12px] md:text-[18px] shadow-[2.08px_4.16px_4.16px_0px_#00000040] rounded-[40px] button-grad px-4 py-3 md:py-4 w-full mx-auto">
+            Web予約はこちら
+          </button>
+        </div>
+
+      </div>
+
+      <div
+        class="bg-white shadow-[3px_4px_4px_0px_#00000040] border-[#A19359] border-[3px] rounded-[6px] md:rounded-[10px] py-7 px-6 w-fit mx-auto">
+        <h2 class="font-[400] text-[16px] md:text-[24px] text-center ">長谷川レディースクリニック
+          <br>橋本
+        </h2>
+        <img src="assets/button-bg.jpg" class="w-[137px] md:w-[230px] mx-auto mt-4" alt="">
+        <p class="text-[10px] md:text-[13px] font-[400] mt-4 md:pl-4">〒252-0143  <br>
+          神奈川県相模原市緑区橋本2-3-6吉美ビル3F</p>
+        <div class="flex flex-col  w-fit mx-auto items-center gap-4 md:gap-6 mt-6 md:mt-8">
+
+          <button
+            class="text-[9px] md:text-[16px] shadow-[2.08px_4.16px_4.16px_0px_#00000040] rounded-[40px] button-grad px-4 py-2 md:py-3  mx-auto">
+            クリニックを詳しく見る
+          </button>
+          <button
+            class="text-[12px] md:text-[18px] shadow-[2.08px_4.16px_4.16px_0px_#00000040] rounded-[40px] button-grad px-4 py-3 md:py-4 w-full mx-auto">
+            Web予約はこちら
+          </button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Questionnaire Section -->
+  <section class="py-10 md:py-20 ">
+    <h2 class="font-bold text-[24px] md:text-[48px] text-center font-serif ">QUESTION</h2>
+    <p class="text-center text-[12px] md:text-[24px] ">よくある質問</p>
+
+    <div class="w-full max-w-[1280px] mx-auto mt-12 md:mt-16 px-4 flex flex-col gap-6 ">
+      <div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10 opacity-80 md:opacity-70 ">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">Q</span>
+          <p class="text-[10px] md:text-[20px]">全く知識がない状態で受診しても大丈夫でしょうか？</p>
+        </div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10   opacity-80 md:opacity-70 mt-4">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">A</span>
+          <p class="text-[10px] md:text-[20px]">
+            はい、もちろんです。当院へお越しになる方のほとんどが、何から始めたらいいか分からない「初心者」の方々です。難しい専門用語は使わず、今の状態や今後の選択肢を分かりやすくお伝えしますので、まずは相談するお気持ちで安心してお越しください。
+          </p>
+        </div>
+
+      </div>
+
+      <div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10 opacity-80 md:opacity-70 ">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">Q</span>
+          <p class="text-[10px] md:text-[20px]">仕事をしながら通院することは可能ですか？</p>
+        </div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10   opacity-80 md:opacity-70 mt-4">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">A</span>
+          <p class="text-[10px] md:text-[20px]">
+            可能です。当院では仕事と治療の両立を全力でサポートしています。赤坂院での夜間・土日祝診療に加え、「平日は仕事帰りに赤坂、休みは自宅近くの淵野辺」といった柔軟な通院が可能です。当日予約や飛び込み受診にも対応し、待ち時間の短縮にも努めています。
+          </p>
+        </div>
+
+      </div>
+      <div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10 opacity-80 md:opacity-70 ">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">Q</span>
+          <p class="text-[10px] md:text-[20px]">費用がいくらかかるか心配です。</p>
+        </div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10   opacity-80 md:opacity-70 mt-4">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">A</span>
+          <p class="text-[10px] md:text-[20px]">
+            不妊治療は「高い」というイメージを持たれがちですが、現在は多くの治療が保険適用となります。当院では、高額療養費制度などの公的制度を活用し、月々の自己負担額を抑えるプランをご提案しています。無理な勧誘は一切ありませんので、ご予算に合わせた治療ステップを一緒に考えていきましょう。
+          </p>
+        </div>
+
+
+      </div>
+
+      <div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10 opacity-80 md:opacity-70 ">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">Q</span>
+          <p class="text-[10px] md:text-[20px]">痛い検査や怖い治療はありませんか？</p>
+        </div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10   opacity-80 md:opacity-70 mt-4">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">A</span>
+          <p class="text-[10px] md:text-[20px]">
+            患者様の身体的・精神的な負担を最小限に抑える「痛くない・怖くない」診療を徹底しています。25年の実績に基づいた低刺激な手法や、麻酔の工夫、看護師によるきめ細やかなカウンセリング体制を整えています。不安なことは、どんなに小さなことでもスタッフへお聞かせください。
+          </p>
+        </div>
+
+
+      </div>
+
+      <div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10 opacity-80 md:opacity-70 ">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">Q</span>
+          <p class="text-[10px] md:text-[20px]">夫婦ではなく、まずは一人で相談に行ってもいいですか？</p>
+        </div>
+        <div
+          class="bg-[#E1DBB9B2] rounded-[6px] md:rounded-[20px] px-5 md:px-12 py-4 md:py-6 flex items-center gap-4 md:gap-10   opacity-80 md:opacity-70 mt-4">
+          <span class="font-serif text-[18px] md:text-[60px] inline-block">A</span>
+          <p class="text-[10px] md:text-[20px]">
+            はい、まずは女性お一人で、あるいは男性お一人でのご相談も歓迎しております。また、卵子凍結や婦人科一般の悩みなど、将来を見据えたご相談も承っています。「まだ不妊治療と決まったわけではないけれど…」という段階でも、お気軽にご活用ください。
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Last Section -->
+  <section class="py-10 md:py-20 bg-[#FDFAF2] px-4 md:px-0">
+    <h2 class="font-[500] text-[20px] md:text-[30px] text-center ">一人で悩まず、 <br class="md:hidden">
+      まずは相談してみませんか？</h2>
+    <img src="assets/last.png" class="mt-16 w-[700px] mx-auto mb-10" alt="">
+    <div class="flex justify-center">
+      <h2 class=" yellow-title text-[17px] md:text-[28px] font-[500] text-center ">Webなら <br class="md:hidden">
+        24時間予約受付・当日予約OK</h2>
+    </div>
+
+    <div class="w-full max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-24 mt-12 md:mt-16 px-4">
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">赤坂院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">淵野辺院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+      <div
+        class="bg-[#E1DBB9B2]/70 rounded-[15px] md:rounded-[30px] p-6 w-[210px] md:w-fit mx-auto shadow-[0px_4px_4px_0px_#00000040]">
+        <p class="text-[17px] md:text-[28px] font-bold text-center">橋本院</p>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full py-4 px-6 md:px-10 md:py-8 mt-6 shadow-[4px_4px_4px_0px_#00000040] md:mt-10 relative group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">詳細はこちら</span>
+        </button>
+        <button
+          class="text-[14px] md:text-[20px] text-white font-[500] rounded-[50px]  opacity-70 w-full px-10 py-2 md:py-4 mt-5 md:mt-8 relative shadow-[4px_4px_4px_0px_#00000040] group overflow-hidden button-border">
+          <div class="absolute inset-0 bg-[#A19359]/70 z-10"></div>
+          <img src="assets/button-bg.jpg" alt="" class="absolute  inset-0 z-[-1] h-full w-full object-cover ">
+          <span class="relative z-20">Web予約</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.media-swiper', {
+      loop: true,
+      speed: 700,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.media-swiper .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.media-swiper .swiper-button-next',
+        prevEl: '.media-swiper .swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>

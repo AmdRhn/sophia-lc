@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./shared.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans JP:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Serif:wght@500&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['IBM Plex Serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+      <!-- Hero-Section -->
+
+  <section class="h-screen relative">
+    <img src="assets/hero2.jpg" alt="" class="w-full object-cover h-full scale-x-[-1]" style="object-position: 50%;">
+    <div class="absolute inset-0 bg-[#A1935933]"></div>
+    <div
+      class="absolute inset-0 flex lg:flex-row flex-col  items-center  justify-center gap-20 lg:gap-0 xl:gap-[120px] px-4">
+      <div class="flex flex-col items-center  justify-center gap-5 px-4">
+
+        <h1 class="font-bold text-[20px] md:text-[36px] text-center ">キャリアも、日常も、<br class="md:hidden">
+          あきらめない。</h1>
+        <p class="text-[17px] md:text-[30px] text-center font-[500]">羽根のように軽やかに<br>
+          いちばん通いやすく、<br>
+          分かりやすい <br class="md:hidden">
+          クリニックへ。</p>
+
+        <img src="assets/hero-bubble.png" class=" hidden lg:block w-[227px] md:w-[410px]" alt="">
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <div
+          class="bg-[#D9D2A7]/80 rounded-full size-[100px] md:size-[200px]  flex flex-col items-center justify-center">
+          <span class="text-[12.5px] md:text-[28px]">
+            当院の妊娠率
+          </span>
+          <h2 class="text-[35px] md:text-[70px] leading-[24px] lg:leading-[50px] font-serif font-[500]">
+            55.<span class="text-[17px] md:text-[50px]">1%</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] flex  items-center justify-center  px-4 py-2 gap-6">
+            当日予約 <br>
+            予約外も
+            <span class="text-[22px] md:text-[45px]">OK</span>
+          </div>
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] flex  items-center justify-center  px-4 py-2 gap-6">
+            平日20時まで診療
+            <br>
+            土日も診療！
+          </div>
+
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] flex flex-col  items-center justify-center max-h-[64px] md:max-h-[106px] md:leading-[32px] px-4 py-2 ">
+            <span class="text-[11px] md:text-[20px] text-left w-full">あらゆる</span>
+            婦人科トラブル
+            <span class="text-[11px] md:text-[20px] text-right w-full">に対応</span>
+          </div>
+
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[23px]  md:leading-[30px] flex flex-col   items-center justify-center max-h-[64px] md:max-h-[106px]  px-4 py-2 ">
+          
+          <p>  <span class="font-[400] text-[23px] mr-2 text-right ">赤坂駅</span> 徒歩<span class="text-[31px]">15</span>秒</p>
+          <p>  <span class="font-[400] text-[23px] mr-2">赤坂見附駅</span> 徒歩<span class="text-[31px]">6</span>分</p>
+             <p>  <span class="font-[400] text-[23px] mr-2">溜池山王駅</span> 徒歩<span class="text-[31px]">7</span>分</p>
+
+        
+
+          </div>
+        </div>
+
+        <img src="assets/hero-bubble.png" class="  lg:hidden w-[227px] md:w-[410px]" alt="">
+
+      </div>
+    </div>
+
+  </section>
+
+  <main>
+  
+  <section class="second-area__group">
+    <div class="common-1100-width common-100-padding">
+      <div class="second-items__block">
+        <div class="second-items__box">			
+<!-- スマホ用予約ボタン -->
+<div class="access-reserve__wrap pc_none" style="margin-top: -30px; margin-bottom: 16px;">
+  <a href="https://sophia.atat.jp/i/f.php" target="_blank" rel="noreferrer">
+    <span>オンラインでのご予約はこちら</span>
+    <div class="_reserve">24時間予約</div>
+  </a>
+</div>
+<!-- スマホ用予約ボタンここまで -->		
+          <h2 class="_titile"><b>INFO</b>RMATION <a href="<?php echo home_url(); ?>/info/">一覧を見る</a></h2>
+          <div class="info-items__wrap">
+
+  <!-- Item 1 -->
+  <div class="info-items__block">
+    <div class="info-thumbnail__items">
+      <div class="_thumbnail">
+        <figure>
+          <img src="assets/img/sample1.jpg" alt="Sample Title 1">
+        </figure>
+      </div>
+    </div>
+
+    <div class="info-text__items">
+      <span class="_category">今月の担当医表</span>
+      <span class="_time">2026.06.01</span>
+      <p>6月 外来担当医表</p>
+    </div>
+
+    <a href="#">詳しく見る</a>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="info-items__block">
+    <div class="info-thumbnail__items">
+      <div class="_thumbnail">
+        <figure>
+          <img src="assets/img/sample2.jpg" alt="Sample Title 2">
+        </figure>
+      </div>
+    </div>
+
+    <div class="info-text__items">
+      <span class="_category">今月の担当医表</span>
+      <span class="_time">2026.05.01</span>
+      <p>5月 外来担当医表</p>
+    </div>
+
+    <a href="#">詳しく見る</a>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="info-items__block">
+    <div class="info-thumbnail__items">
+      <div class="_thumbnail">
+        <figure>
+          <img src="assets/img/sample3.jpg" alt="Sample Title 3">
+        </figure>
+      </div>
+    </div>
+
+    <div class="info-text__items">
+      <span class="_category">お知らせ</span>
+      <span class="_category">通院中の患者さまへ</span>
+
+      <span class="_time">2026.05.01</span>
+      <p>不妊治療だけでなく、婦人科診療も診察いたします。</p>
+    </div>
+
+    <a href="#">詳しく見る</a>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="info-items__block">
+    <div class="info-thumbnail__items">
+      <div class="_thumbnail">
+        <figure>
+          <img src="assets/img/sample4.jpg" alt="Sample Title 4">
+        </figure>
+      </div>
+    </div>
+
+    <div class="info-text__items">
+      <span class="_category">お知らせ</span>
+      <span class="_time">2026.05.01</span>
+      <p>5月開院しました。</p>
+    </div>
+
+    <a href="#">詳しく見る</a>
+  </div>
+
+</div>
+          <div class="index-banner__wrap">
+<div class="index-banner__block" style="display: flex; flex-direction: column; gap: 20px;">
+<style>
+            /* 基本設定（PC用：横並び） */
+            ul.custom-banner-list {
+              display: flex !important;
+              justify-content: space-between; /* 均等に配置 */
+              gap: 20px; /* 画像の間の隙間 */
+              padding: 0;
+              margin: 0;
+              list-style: none;
+            }
+            ul.custom-banner-list li {
+              width: 48%; /* PCでは横幅の約半分ずつ使う */
+              margin: 0;
+            }
+            
+            /* スマホ（幅768px以下）のときの設定（縦並び） */
+            @media screen and (max-width: 768px) {
+              ul.custom-banner-list {
+                flex-direction: column; /* 縦方向に並べる */
+              }
+              ul.custom-banner-list li {
+                width: 100%; /* 横幅いっぱいに広げる */
+              }
+            }
+          </style>
+
+<style>
+.index-banner__block.custom-banner-list {
+  display: flex;
+  gap: 16px;
+}
+
+.index-banner__block.custom-banner-list li {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .index-banner__block.custom-banner-list {
+    flex-direction: column;
+  }
+}
+</style>
+
+<ul class="index-banner__block custom-banner-list">
+  <li>
+    <a href="<?php echo home_url(); ?>/medical/freeze-egg">
+      <img src="http://sophia-lc.jp/wp-content/uploads/2026/03/3.webp" alt="計画的卵子凍結" style="width: 100%; height: auto;">
+    </a>
+  </li>
+  <li>
+    <a href="<?php echo home_url('/recruit/'); ?>">
+      <img src="/assets/page-2/recruit.png" alt="求人情報" style="width: 100%; height: auto;">
+    </a>
+  </li>
+</ul>
+
+          </div>
+          </div>
+        </div>
+        <div class="second-items__box">
+          <div class="_titile"><b>SCHE</b>DULE<a href="<?php echo home_url(); ?>/info/info-30/">外来担当医表</a></div>
+			<div class="schedule-items__wrap">
+			  <table>
+				  <tr>
+                <th>受付時間</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+                <th>日</th>
+                <th>(祝)</th>
+              </tr>
+				  <tr>
+					  <td>09:30-13:00<br>
+						  <b>受付12:45まで</b></td>
+                <td>○</td>
+                <!-- 月 -->
+                <td>○</td>
+                <!-- 火 -->
+                <td>○</td>
+                <!-- 水 -->
+				  <td>○</td>
+                <!-- 木 -->
+                <td>○</td>
+                <!-- 金 -->
+                <td>◉</td>
+                <!-- 土 -->
+                <td>◉</td>
+                <!-- 日 --> 
+                <td>ー</td>
+                <!-- 祝日 --> 
+              </tr>
+              <tr>
+                <td>15:00-18:30<br>
+					<b>受付18:15まで</b></td>
+                <td>○</td>
+                <!-- 月 -->
+                <td>○</td>
+                <!-- 火 -->
+                <td>○</td>
+                <!-- 水 -->
+                <td>ー</td>
+                <!-- 木 -->
+                <td>○</td>
+                <!-- 金 -->
+                <td>ー</td>
+                <!-- 土 -->
+                <td>ー</td>
+                <!-- 日 --> 
+                <td>ー</td>
+                <!-- 祝日 --> 
+                
+              </tr>
+              <tr>
+                <td>17:00-20:00
+                <br> <b>最終受付19:30</b>
+					</td>
+                <td>○</td>
+                <!-- 月 -->
+                <td>ー</td>
+                <!-- 火 -->
+                <td>○</td>
+                <!-- 水 -->
+                <td>○</td>
+                <!-- 木 -->
+                <td>○</td>
+                <!-- 金 -->
+                <td>ー</td>
+                <!-- 土 -->
+                <td>ー</td>
+                <!-- 日 --> 
+                <td>ー</td>
+                <!-- 祝日 --> 
+                
+              </tr>
+            </table>
+            <span>◉8:30-13:30(受付終了13:00)<br>※最終受付16:30</span> </div>
+          <div class="access-tel__wrap"> <a href="tel:0427763636">
+            <div class="_tel"><span>お問い合わせ</span>042-776-3636</div>
+            </a> </div>
+          <div class="access-reserve__wrap"> <a href="https://sophia.atat.jp/i/f.php" target="_blank" rel="noreferrer"> <span>オンラインでのご予約はこちら</span>
+            <div class="_reserve">24時間予約</div>
+            </a> </div>
+<div class="contact-line__wrap">
+
+  <a href="https://lin.ee/p9aBBGw" target="_blank" rel="nofollow">
+    <img src="assets/page-2/Line.png" alt="LINE">
+  </a>
+
+  <!-- <?php /* ▼▼▼ 求人バナー（無効化中） ▼▼▼
+  <a href="<?php echo home_url('/recruit/'); ?>">
+    <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/index-banner02.png" alt="求人情報" style="width: 100%; height: auto;">
+  </a>
+  ▲▲▲ ここまで ▲▲▲ */ ?> -->
+
+</div>
+          <!--
+          <div class="social-icon__wrap">
+            <div class="_icon"><a href="<?php echo home_url(); ?>/" target="_blank" rel="nofollow"><img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/social-instagram.svg" alt="instagram"></a></div>
+            <div class="_icon"><a href="<?php echo home_url(); ?>/" target="_blank" rel="nofollow"><img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/social-twitter.svg" alt="twitter"></a></div>
+            <div class="_icon"><a href="<?php echo home_url(); ?>/" target="_blank" rel="nofollow"><img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/social-line.svg" alt="line"></a></div>
+          </div>
+--> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="navigation-area__group">
+    <div class="common-1100-width">
+      <ul class="navigation-area__block">
+        <li><a href="<?php echo home_url(); ?>/firsttime/"> <span class="_icon"><img src="/assets/page-2/icon-firsttime.svg" alt="初めての方"></span> <span class="_text">初めての方</span> <span class="_btn">MORE</span> </a></li>
+        <li><a href="<?php echo home_url(); ?>/visit/"> <span class="_icon"><img src="/assets/page-2/icon-visit.svg" alt="通院中の方"></span> <span class="_text">通院中の方</span> <span class="_btn">MORE</span> </a></li>
+        <li><a href="<?php echo home_url(); ?>/#access"> <span class="_icon"><img src="/assets/page-2/icon-access.svg" alt="アクセス"></span> <span class="_text">アクセス</span> <span class="_btn">MORE</span> </a></li>
+      </ul>
+    </div>
+  </section>
+
+    <div id="greeting"></div>
+  <section class="greeting-area__group">
+    <div class="common-1100-width common-120-padding">
+      <div class="greeting-items__block">
+        <div class="greeting-items__text">
+          <div class="common-title__wrap _left"> <span><b>ABOUT </b> DIRECTOR</span>
+            <h2>院長あいさつ</h2>
+          </div>
+          <div class="_image" style="height: 100%;"><img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/greeting-image.jpg" alt="院長あいさつ"></div>
+          <p>ホームページをご覧いただき、ありがとうございます。2026年5月より長谷川レディースクリニック赤坂の院長を拝命いたしました上野啓子と申します。 <br><br>
+大学病院や様々なクリニックでの経験を通じて、産婦人科は他の科と異なり、大変プライベートな悩みや身体のことをご相談いただく診療科であると実感しております。私自身、内診台での診察を受ける時はやはり緊張いたします。時に、友人や家族にも相談しにくいことをお話いただくからこそ、最新の知見とエビデンスを基に、お一人おひとりの生活スタイルに合わせた治療を安心して受けていただけるよう心がけております。</p>
+        </div>
+        <div class="greeting-items__image">
+          <div class="_image"><img src="assets/page-2/Director.png" alt="院長あいさつ"></div>
+          <div class="_btn"><a href="<?php echo home_url(); ?>/doctor/"><img src="/assets/page-2/btn-image.svg" alt="一覧はこちら"></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="reason"></div>
+  <section class="reason-area__group">
+    <div class="common-1100-width common-120-padding">
+      <div class="common-title__wrap"> <span>The <b>reason</b> why it was chosen</span>
+        <h2>当クリニックが<br class="pc_none">
+          安心な<b>8つ</b>の理由</h2>
+      </div>
+      <!-- <div class="movie-area">
+        <div class="movie-wrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dX5bRpfv7s8?si=8ZIFqZZyos5iYMOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div> -->
+      <div class="reason-items__wrap">
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason1.png" alt="長い伝統と最先端医学で高い妊娠率" class="visual"> <img src="assets/page-2/number1.png" alt="長い伝統と最先端医学で高い妊娠率" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number1.png" alt="">
+              <h3>赤坂駅2番出口から徒歩15秒！ <br>
+                働くあなたの味方です。</h3>
+            </div>
+            <p>東京メトロ千代田線「赤坂駅」から徒歩15秒、<br>
+              丸ノ内線・銀座線「赤坂見附駅」から徒歩6分<br>
+              銀座線、南北線「溜池山王駅」から徒歩7分<br>
+              当日予約OKで、お仕事終わりに通いやすいクリニックです。<br>
+              予約なしの受診もOKです。</p>
+          </div>
+        </div>
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason2.png" alt="患者様にやさしく心のこもった医療" class="visual"> <img src="assets/page-2/number2.png" alt="患者様にやさしく心のこもった医療" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number2.png" alt="患者様にやさしく心のこもった医療">
+              <h3>痛くない、怖くない。丁寧で安心な診療</h3>
+            </div>
+            <p>当クリニックでは、「うとうとと眠っている間に終わる麻酔」を <br>
+採卵に使うなど、あなたの体への負担を最小限に抑えるケアを <br>
+心掛けています。 <br>
+「何をされるか分からない」という怖さがないよう、当院はプリントや動画を使って、スタッフから懇切丁寧な説明を心がけています。 <br>
+費用面の不安もしっかりサポートします。</p>
+          </div>
+        </div>
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason3.png" alt="人目以降の不妊治療に強いクリニック" class="visual"> <img src="assets/page-2/number3.png" alt="人目以降の不妊治療に強いクリニック" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number3.png" alt="人目以降の不妊治療に強いクリニック">
+              <h3>2人目の妊活をお子様と一緒に。子連れ通院OK</h3>
+            </div>
+            <p>「上の子を連れて行ってもいいのかな？」<br>
+そんな不安で、二人目の相談をためらう必要はありません。<br>
+当クリニックは子連れでの通院も大歓迎です。<br>
+育児と仕事、そして妊活を並走するあなたの歩幅に寄り添い、<br>
+安心して治療に専念できる環境を整えています。</p>
+          </div>
+        </div>
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason4.png" alt="プレコンセプションケア外来・卵子凍結" class="visual"> <img src="assets/page-2/number4.png" alt="プレコンセプションケア外来・卵子凍結" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number4.png" alt="プレコンセプションケア外来・卵子凍結">
+              <h3>一般婦人科診療に幅広く対応</h3>
+            </div>
+            <p>当院は『女性の人生の四季』に寄り添うクリニックとして、思春期から更年期、老年期までの様々な症状に対応しています。更年期障害やがん検診、生理周りの症状、ピル相談、デリケートゾーンの痒み、など何でもご相談ください。女性ヘルスケア専門の女性医師も在籍しており、幅広く対応可能です。</p>
+          </div>
+        </div>
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason5.png" alt="男性不妊外来・男性ブライダルチェック" class="visual"> <img src="assets/page-2/number5.png" alt="男性不妊外来・男性ブライダルチェック" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number5.png" alt="男性不妊外来・男性ブライダルチェック">
+              <h3>夫婦一緒に検査・治療を行えます</h3>
+            </div>
+            <p>不妊原因の半分は男性因子にあると言われています。そのため、男性にとって敷居が高く、なかなか相談しにくいED、射精障害なども素早く的確な対応が可能です。カップル同時に検査・治療を効率よく進められます。男性お一人での診察も可能です。お気軽にお越しください。</p>
+          </div>
+        </div>
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason6.png" alt="長谷川レディースクリニックと連携治療" class="visual"> <img src="assets/page-2/number6.png" alt="長谷川レディースクリニックと連携治療" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number6.png" alt="長谷川レディースクリニックと連携治療">
+              <h3>長谷川レディースクリニックグループで連携治療</h3>
+            </div>
+            <p>当院は長谷川レディースクリニックグループの橋本・淵野辺院と連携して婦人科治療および不妊治療を行なっています。3つの施設で連携して、検査結果や治療方針の共有が可能です。</p>
+          </div>
+        </div>
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason7.png" alt="一般婦人科診療に幅広く対応" class="visual"> <img src="assets/page-2/number7.png" alt="一般婦人科診療に幅広く対応" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number7.png" alt="一般婦人科診療に幅広く対応">
+              <h3>卵子凍結、ブライダルチェック・プレコン外来</h3>
+            </div>
+            <p>当院は患者様のライフプランを第一に尊重した医療を提供します。
+『まだ妊娠予定は無いけど、将来の妊娠のために何かできることを知りたい』など、妊娠能力に関する様々な検査や栄養相談、ブライダルチェックを通して、患者様のこれからのライフプランを総合的に考えることを大事にしております。未婚女性の方の卵子凍結も可能です。</p>
+          </div>
+        </div>
+        <div class="reason-items__block">
+          <div class="reason-items__image"> <img src="assets/page-2/reason8.png" alt="通いやすさ重視のクリニック" class="visual"> <img src="assets/page-2/number8.png" alt="通いやすさ重視のクリニック" class="number"></div>
+          <div class="reason-items__text">
+            <div class="_title"> <img src="assets/page-2/number8.png" alt="通いやすさ重視のクリニック">
+              <h3>あらゆる先進医療に対応</h3>
+            </div>
+            <p>当グループは25年間で数多くの妊娠をお手伝いしてきました。胚へのストレスを最小限に抑える「タイムラプス・インキュベーター」をはじめ、世界水準の高度生殖医療設備を完備。<br>
+大学病院で長年経験を積んだ医師・培養士・看護師により確かな成果と信頼できる治療を実現しています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="disease"></div>
+  <section class="disease-area__group">
+    <div class="common-1100-width">
+      <div class="common-title__wrap"> <span><b>disease</b> lists</span>
+        <h2>当院は様々な症状に<br class="pc_none">
+          対応しています</h2>
+      </div>
+      <div class="disease-items__wrap">
+        <div class="disease-items__block">
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/infertility/"> <span class="_icon"><img src="/assets/page-2/disease-icon01.svg" alt="不妊症"></span> <span class="_text">不妊症</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="不妊症"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/male-infertility//"> <span class="_icon"><img src="/assets/page-2/disease-icon11.svg" alt="男性不妊"></span> <span class="_text">男性不妊</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="男性不妊"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/day-hysteroscopy/"> <span class="_icon"><img src="/assets/page-2/disease-icon15.svg" alt="日帰り子宮鏡手術"></span> <span class="_text">日帰り子宮鏡手術</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="日帰り子宮鏡手術"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/irregular-menstruation/"> <span class="_icon"><img src="/assets/page-2/disease-icon14.svg" alt="生理不順"></span> <span class="_text">生理不順</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="生理不順"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/menstrual-pain/"> <span class="_icon"><img src="/assets/page-2/disease-icon06.svg" alt="生理痛"></span> <span class="_text">生理痛</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="生理痛"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/abnormal-bleeding/"> <span class="_icon"><img src="/assets/page-2/disease-icon08.svg" alt="不正出血"></span> <span class="_text">不正出血</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="不正出血"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/pill-consultation/"> <span class="_icon"><img src="/assets/page-2/disease-icon04.svg" alt="ピル相談・アフターピル"></span> <span class="_text">ピル相談・アフターピル</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="ピル相談・アフターピル"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/menstrual-movement/"> <span class="_icon"><img src="/assets/page-2/disease-icon05.svg" alt="生理移動"></span> <span class="_text">生理移動</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="生理移動"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/sexual-infection/"> <span class="_icon"><img src="/assets/page-2/disease-icon04.svg" alt="性感染症"></span> <span class="_text">性感染症</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="性感染症"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/premenstrual-syndrome/"> <span class="_icon"><img src="/assets/page-2/disease-icon07.svg" alt="月経前症候群"></span> <span class="_text">月経前症候群</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="月経前症候群"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/endometriosis/"> <span class="_icon"><img src="/assets/page-2/disease-icon09.svg" alt="子宮内膜症"></span> <span class="_text">子宮内膜症</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="子宮内膜症"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/menopause/"> <span class="_icon"><img src="/assets/page-2/disease-icon10.svg" alt="更年期障害"></span> <span class="_text">更年期障害</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="更年期障害"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/preconception-care/"> <span class="_icon"><img src="/assets/page-2/disease-icon03.svg" alt="プレコンセプションケア"></span> <span class="_text">プレコンセプションケア</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="プレコンセプションケア"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/bridal-check/"> <span class="_icon"><img src="/assets/page-2/disease-icon02.svg" alt="ブライダルチェック"></span> <span class="_text">ブライダルチェック</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="ブライダルチェック"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/freeze-egg/"> <span class="_icon"><img src="/assets/page-2/disease-icon13.svg" alt="卵子凍結"></span> <span class="_text">卵子凍結</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="卵子凍結"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/cancer-vaccine/"> <span class="_icon"><img src="/assets/page-2/disease-icon11.svg" alt="子宮頚がんワクチン"></span> <span class="_text">子宮頚がんワクチン</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="子宮頚がんワクチン"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/cancer-screening/"> <span class="_icon"><img src="/assets/page-2/disease-icon12.svg" alt="子宮がん乳がん検診"></span> <span class="_text">子宮がん乳がん検診</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="子宮がん乳がん検診"></span> </a> </div>
+          <div class="disease-items__box"> <a href="<?php echo home_url(); ?>/medical/aesthetic-medicine/"> <span class="_icon"><img src="/assets/page-2/disease-icon10.svg" alt="美容医療"></span> <span class="_text">美容医療</span> <span class="_arrow"><img src="/assets/page-2/icon-next.svg" alt="美容医療"></span> </a> </div>
+        </div>
+      </div>
+      <!-- <div class="_btn"><a href="<?php echo home_url(); ?>/medical/day-hysteroscopy/"><img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/btn-image.svg" alt="一覧はこちら"></a></div> -->
+    </div>
+  </section>
+
+  <section class="blog-area__group">
+    <div class="">
+      <div class="blog-area__inner">
+        <div id="media"></div>
+        <div class="media-items__block">
+          <div class="media-items__title">
+            <div class="common-title__wrap _left"> <span><b>MEDIA</b> lists</span>
+              <h2>メディア掲載</h2>
+            </div>
+          </div>
+          <div class="media-items__lists">
+  <ul>
+
+    <!-- Item 1 -->
+    <li>
+      <a href="#" target="_blank" rel="nofollow">
+        <div class="_image">
+          <img src="assets/media1.png" alt="Media 1">
+        </div>
+        <div class="_text">
+          森三中・大島さんと長谷川統括院長の対談記事
+        </div>
+      </a>
+    </li>
+
+    <!-- Item 2 -->
+    <li>
+      <a href="#" target="_blank" rel="nofollow">
+        <div class="_image">
+          <img src="assets/media2.png" alt="Media 2">
+        </div>
+        <div class="_text">
+          「ザ！世界仰天ニュース（日本テレビ）」長谷川統括院長が出演
+        </div>
+      </a>
+    </li>
+
+    <!-- Item 3 -->
+    <li>
+      <a href="#" target="_blank" rel="nofollow">
+        <div class="_image">
+          <img src="assets/media3.png" alt="Media 3">
+        </div>
+        <div class="_text">
+          「病院まちねっと」長谷川統括院長インタビュー
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="#" target="_blank" rel="nofollow">
+        <div class="_image">
+          <img src="assets/media4.png" alt="Media 3">
+        </div>
+        <div class="_text">
+          「ドクターズ・ファイル」長谷川統括院長インタビュー
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="#" target="_blank" rel="nofollow">
+        <div class="_image">
+          <img src="assets/media5.png" alt="Media 3">
+        </div>
+        <div class="_text">
+          「メディカルノート」長谷川統括院長の紹介ページ
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+        </div>
+        <div id="blog"></div>
+        <div class="blog-items__block">
+          <div class="blog-items__title">
+            <div class="common-title__wrap _left"> <span><b>BLOG</b> lists</span>
+              <h2>ブログ</h2>
+            </div>
+            <div class="_btn"><a href="<?php echo home_url(); ?>/blog/"><img src="/assets/page-2/btn-image.svg" alt="一覧はこちら"></a></div>
+          </div>
+          <div class="blog-items__lists">
+  <ul>
+
+    <!-- Item 1 -->
+    <li>
+      <div class="blog-category__lists">
+        <span class="_time">2026.01.28</span>
+        <span class="_category">不妊治療</span>
+      </div>
+      <a href="#">
+       不妊治療の保険適用を徹底解説！対象範囲・回数制限・メリット/デメリットまで
+      </a>
+    </li>
+
+    <!-- Item 2 -->
+    <li>
+      <div class="blog-category__lists">
+        <span class="_time">2026.04.25</span>
+        <span class="_category">婦人科疾患</span>
+      </div>
+      <a href="#">
+        子宮頸がんワクチンと妊活の関係｜接種時期と妊娠への影響を解説
+      </a>
+    </li>
+
+    <!-- Item 3 -->
+    <li>
+      <div class="blog-category__lists">
+        <span class="_time">2026.04.20</span>
+        <span class="_category">婦人科疾患</span>
+      </div>
+      <a href="#">
+        ピル服用中でも子宮頸がんワクチン接種はできる？併用時の注意点・リスクを解説
+      </a>
+    </li>
+
+  </ul>
+</div>
+        </div>
+        <div class="blog-banner__block">
+          <li><a href="https://sophia-lc.jp/blog_cat/consultation-room/"><img src="/assets/page-2/blog-banner_01.png" alt="不妊の相談室"></a></li>
+          <li><a href="https://sophia-lc.jp/review/"><img src="/assets/page-2/blog-banner_02.png" alt="卒業生からの手紙"></a></li>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div id="facility"></div>
+  <section class="facility-area__group">
+    <ul class="facility-slider__wrap">
+      <li> <img src="/assets/page-2/facility1.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility2.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility3.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility4.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility5.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility3.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility5.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility2.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility4.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility1.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility3.png" alt="施設紹介"> </li>
+      <li> <img src="/assets/page-2/facility5.png" alt="施設紹介"> </li>
+    </ul>
+    <!-- <div class="_btn"><a href="<?php echo home_url(); ?>/facility/"><img src="/assets/page-2/btn-image.svg" alt="一覧はこちら"></a></div> -->
+  </section>
+  <section class="banner-area__group">
+    <article class="banner-area__inner">
+      <div class="common-1100-width common-100-padding">
+        <div class="banner-items__block">
+          <div class="banner-items__box"><a href="<?php echo home_url(); ?>/recruit/"><img src="/assets/page-2/banner-image01_pc.jpg" alt="求人情報" class="sp_none"> <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/page-2/banner-image01_sp.jpg" alt="" class="pc_none"></a></div>
+          <div class="banner-items__box"><a href="<?php echo home_url(); ?>/faq/"><img src="/assets/page-2/banner-image02.jpg" alt="よくある質問"></a></div>
+          <div class="banner-items__box"><a href="<?php echo home_url(); ?>/organization/"><img src="/assets/page-2/banner-image03.jpg" alt="紹介病院医療機関"></a></div>
+          <div class="banner-items__box"><a href="<?php echo home_url(); ?>/info/info-30/"><img src="/assets/page-2/banner-image04.jpg" alt="外来担当医表"></a></div>
+			<div class="banner-items__box"><a href="<?php echo home_url(); ?>/download/"><img src="/assets/page-2/banner-image06.jpg" alt="更新書類ダウンロード"></a></div>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> 
+<script>
+	$(function(){
+  $('.facility-slider__wrap').slick({
+    arrows: false,
+    slidesToShow: 7,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    speed: 5000,
+	responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+		slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 426, 
+        settings: {
+		slidesToShow: 2,
+        },
+      },
+    ],
+     });
+});
+$(window).on("resize orientationchange", function () {
+$(".facility-slider__wrap").slick("resize");
+});
+	</script> 
+
+</body>
+
+</html>
