@@ -212,13 +212,27 @@ a:hover, a:focus {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
 }
+  .md-hide{
+    display: none !important;
+  }
 @media screen and (max-width: 769px) {
+  .sm-hide{
+    display: none !important;
+  }
+  .md-hide{
+    display: block !important;
+  }
   .main-u-page {
     padding-top: 80px;
   }
- #reason, #disease, #greeting, #blog, #review, #access, #facility, #media{
+ #reason, #disease, #greeting, #blog, #review, #access,    #media{
     padding-top: 80px;
     margin-top: -80px;
+  }
+  #facility{
+    padding-top: 0px;
+    margin-top: -80px;
+
   }
 }
 @media screen and (max-width: 769px) {
@@ -1489,7 +1503,7 @@ a:hover, a:focus {
 .greeting-items__image ._btn {
   width: 133px;
   position: absolute;
-  bottom: 60px;
+  bottom: 0px;
   left: -60px;
 }
 @media screen and (max-width: 769px) {
@@ -1532,7 +1546,6 @@ a:hover, a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0 0 240px;
 }
 .blog-items__title {
   width: 15%;
@@ -1618,7 +1631,6 @@ a:hover, a:focus {
     right: 20px;
   }
   .blog-area__group {
-    padding: 0 0 120px;
   }
   .blog-area__group {
     position: relative;

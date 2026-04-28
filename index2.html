@@ -78,7 +78,7 @@
             <span class="text-[11px] md:text-[20px] text-right w-full">に対応</span>
           </div>
 
-          <div
+          <!-- <div
             class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[23px]  md:leading-[30px] flex flex-col   items-center justify-center max-h-[64px] md:max-h-[106px]  px-4 py-2 ">
           
           <p>  <span class="font-[400] text-[23px] mr-2 text-right ">赤坂駅</span> 徒歩<span class="text-[31px]">15</span>秒</p>
@@ -87,6 +87,11 @@
 
         
 
+          </div> -->
+          <div
+            class="bg-[#D9D2A7]/80 rounded-[10px] font-[500] md:text-[30px] md:leading-[42px] flex flex-col  items-center justify-center max-h-[64px] md:max-h-[106px]  px-4 py-2 ">
+            お子様連れ
+            <span class="text-[22px] md:text-[45px]">OK</span>
           </div>
         </div>
 
@@ -382,12 +387,12 @@
           <div class="common-title__wrap _left"> <span><b>ABOUT </b> DIRECTOR</span>
             <h2>院長あいさつ</h2>
           </div>
-          <div class="_image" style="height: 100%;"><img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/greeting-image.jpg" alt="院長あいさつ"></div>
+          <div class="_image" ><img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/img/greeting-image.jpg" alt="院長あいさつ"></div>
           <p>ホームページをご覧いただき、ありがとうございます。2026年5月より長谷川レディースクリニック赤坂の院長を拝命いたしました上野啓子と申します。 <br><br>
 大学病院や様々なクリニックでの経験を通じて、産婦人科は他の科と異なり、大変プライベートな悩みや身体のことをご相談いただく診療科であると実感しております。私自身、内診台での診察を受ける時はやはり緊張いたします。時に、友人や家族にも相談しにくいことをお話いただくからこそ、最新の知見とエビデンスを基に、お一人おひとりの生活スタイルに合わせた治療を安心して受けていただけるよう心がけております。</p>
         </div>
         <div class="greeting-items__image">
-          <div class="_image"><img src="assets/page-2/Director.png" alt="院長あいさつ"></div>
+          <div class="_image" style="height: 100%;"><img src="assets/page-2/Director.png" style="height: 100%; object-fit: cover;" alt="院長あいさつ"></div>
           <div class="_btn"><a href="<?php echo home_url(); ?>/doctor/"><img src="/assets/page-2/btn-image.svg" alt="一覧はこちら"></a></div>
         </div>
       </div>
@@ -600,15 +605,16 @@
       </a>
     </li>
   </ul>
+
 </div>
         </div>
-        <div id="blog"></div>
+        <div id="blog" style="margin-top: 0px;"></div>
         <div class="blog-items__block">
           <div class="blog-items__title">
             <div class="common-title__wrap _left"> <span><b>BLOG</b> lists</span>
               <h2>ブログ</h2>
             </div>
-            <div class="_btn"><a href="<?php echo home_url(); ?>/blog/"><img src="/assets/page-2/btn-image.svg" alt="一覧はこちら"></a></div>
+            <div class="_btn sm-hide" ><a href="<?php echo home_url(); ?>/blog/"><img src="/assets/page-2/btn-image.svg" alt="一覧はこちら"></a></div>
           </div>
           <div class="blog-items__lists">
   <ul>
@@ -648,7 +654,9 @@
 
   </ul>
 </div>
-        </div>
+            <div class="_btn md-hide" ><a href="<?php echo home_url(); ?>/blog/" style="display: flex; justify-content: flex-end; transform: translateY(20px);" ><img src="/assets/page-2/btn-image.svg" style="width: 85px;" alt="一覧はこちら"></a></div>
+       
+</div>
         <div class="blog-banner__block">
           <li><a href="https://sophia-lc.jp/blog_cat/consultation-room/"><img src="/assets/page-2/blog-banner_01.png" alt="不妊の相談室"></a></li>
           <li><a href="https://sophia-lc.jp/review/"><img src="/assets/page-2/blog-banner_02.png" alt="卒業生からの手紙"></a></li>
@@ -680,7 +688,7 @@
     <article class="banner-area__inner">
       <div class="common-1100-width common-100-padding">
         <div class="banner-items__block">
-          <div class="banner-items__box"><a href="<?php echo home_url(); ?>/recruit/"><img src="/assets/page-2/banner-image01_pc.jpg" alt="求人情報" class="sp_none"> <img src="<?php echo esc_url ( get_template_directory_uri() ); ?>/assets/page-2/banner-image01_sp.jpg" alt="" class="pc_none"></a></div>
+          <div class="banner-items__box"><a href="<?php echo home_url(); ?>/recruit/"><img src="/assets/page-2/banner-image01_pc.jpg" alt="求人情報" class="sp_none"> <img src="/assets/page-2/banner-image01_sp.jpg" alt="" class="pc_none"></a></div>
           <div class="banner-items__box"><a href="<?php echo home_url(); ?>/faq/"><img src="/assets/page-2/banner-image02.jpg" alt="よくある質問"></a></div>
           <div class="banner-items__box"><a href="<?php echo home_url(); ?>/organization/"><img src="/assets/page-2/banner-image03.jpg" alt="紹介病院医療機関"></a></div>
           <div class="banner-items__box"><a href="<?php echo home_url(); ?>/info/info-30/"><img src="/assets/page-2/banner-image04.jpg" alt="外来担当医表"></a></div>
